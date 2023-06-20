@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        /*String cs = "a", cd = "b";
-        int hi = 10, hf = 12;*/
-        String opcion = "S";
+        String cs = "a", cd = "b";
+        int hi = 10, hf = 12;
 
-        String cs, cd;
-        int hi, hf;
+        /*String cs, cd;
+        int hi, hf;*/
 
             System.out.println("Seleccionar la ciudad de salida");
             cs = sc.next();
