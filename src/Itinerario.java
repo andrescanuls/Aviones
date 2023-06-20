@@ -1,5 +1,5 @@
 public class Itinerario {
-    byte numVuelo = 1;
+    byte numVuelo;
     String ciudadDestino, ciudadSalida;
     byte horaInicio, horaFinal;
     Piloto pilotoAsignado;
@@ -10,6 +10,7 @@ public class Itinerario {
         AsignarPiloto();
         AsignarAvion();
         AsignarHorario((byte)hi, (byte)hf);
+        generadorAletorio();
     }
     public void AsignarPiloto(){
         this.pilotoAsignado = new Piloto();
@@ -20,5 +21,9 @@ public class Itinerario {
     public void AsignarHorario(byte hInicio, byte hFinal){
         this.horaInicio = hInicio;
         this.horaFinal = hFinal;
+    }
+
+    public void generadorAletorio(){
+        numVuelo = (byte)(Math.random() * (10 - 0 + 10));
     }
 }

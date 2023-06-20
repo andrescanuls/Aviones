@@ -1,31 +1,42 @@
+import javax.crypto.spec.DESedeKeySpec;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String cs = "a", cd = "b";
-        int hi = 10, hf = 12;
+        /*String cs = "a", cd = "b";
+        int hi = 10, hf = 12;*/
+        String opcion = "S";
 
-        Itinerario  horario1 = new Itinerario(cs,cd,hi,hf);
-
-        System.out.println("¿Desea agendar un vuelo");
-
-        /*
         String cs, cd;
         int hi, hf;
 
-        System.out.println("Seleccionar la ciudad de salida");
-        cs = sc.next();
-        System.out.println("Seleccionar la ciudad de llegada");
-        cd = sc.next();
-        System.out.println("Seleccionar la hora de salida");
-        hi = sc.nextInt();
-        System.out.println("Seleccionar la ciudad de llegada");
-        hf = sc.nextInt();
-        */
+     //   do {
 
+            System.out.println("Seleccionar la ciudad de salida");
+            cs = sc.next();
+            System.out.println("Seleccionar la ciudad de llegada");
+            cd = sc.next();
+            System.out.println("Seleccionar la hora de salida");
+            hi = sc.nextInt();
+            System.out.println("Seleccionar la ciudad de llegada");
+            hf = sc.nextInt();
 
-        MostrarDatosVuelo(horario1);
+            Itinerario h = new Itinerario(cs,cd, hi, hf);
+
+    /*        System.out.println("Desea agendar otro vuelo");
+            opcion = sc.next();
+
+      //  }while (opcion.equals("S"));
+
+       /* System.out.println("¿Desea mostrar los datos de algun vuelo?");
+        String opcMostrar = sc.next();
+            if (opcMostrar.equals("S")){
+                MostrarDatosVuelo();
+            }*/
+        //Itinerario  horario1 = new Itinerario(cs,cd,hi,hf);
+
+        MostrarDatosVuelo(h);
     }
 
     public static void MostrarDatosVuelo (Itinerario horarioAMostrar){
