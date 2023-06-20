@@ -11,8 +11,6 @@ public class Main {
         String cs, cd;
         int hi, hf;
 
-     //   do {
-
             System.out.println("Seleccionar la ciudad de salida");
             cs = sc.next();
             System.out.println("Seleccionar la ciudad de llegada");
