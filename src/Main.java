@@ -19,8 +19,20 @@ public class Main {
             cd = sc.next();
             System.out.println("Seleccionar la hora de salida");
             hi = sc.nextInt();
+
+            while (hi <=0 || hi > 24){
+                System.out.println("Datos no valido");
+                System.out.println("Ingresar una hora aceptable");
+                hi = sc.nextInt();
+            }
             System.out.println("Seleccionar la ciudad de llegada");
             hf = sc.nextInt();
+
+            while (hf <=0 || hf > 24){
+                System.out.println("Datos no valido");
+                System.out.println("Ingresar una hora aceptable");
+                hf = sc.nextInt();
+            }
 
             Itinerario h = new Itinerario(cs,cd, hi, hf);
 
