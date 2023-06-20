@@ -36,18 +36,6 @@ public class Main {
 
             Itinerario h = new Itinerario(cs,cd, hi, hf);
 
-    /*        System.out.println("Desea agendar otro vuelo");
-            opcion = sc.next();
-
-      //  }while (opcion.equals("S"));
-
-       /* System.out.println("¿Desea mostrar los datos de algun vuelo?");
-        String opcMostrar = sc.next();
-            if (opcMostrar.equals("S")){
-                MostrarDatosVuelo();
-            }*/
-        //Itinerario  horario1 = new Itinerario(cs,cd,hi,hf);
-
         MostrarDatosVuelo(h);
     }
 
